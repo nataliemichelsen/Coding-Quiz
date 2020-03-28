@@ -1,38 +1,44 @@
 let questionArr = [
     {
-        question: "Question 1",
-        answers: ["answer1", "answer2", "answer3", "answer4"],
-        correctAnswer: "answer1"
+        question: "To every _______, their is always opposed an equal _________.",
+        answers: ["sister, brother", "country, hunter", "players, physics", "action, reaction"],
+        correctAnswer: "action, reaction"
     },
     {
-        question: "Question 2",
-        answers: ["answer1", "answer2", "answer3", "answer4"],
-        correctAnswer: "answer1"
+        question: "If ________ be the food of _______, play on.",
+        answers: ["music, love", "dairy, frogs", "grapes, toys", "laughter, life"],
+        correctAnswer: "music, love"
     },
     {
-        question: "Question 3",
-        answers: ["answer1", "answer2", "answer3", "answer4"],
-        correctAnswer: "answer1"
+        question: "The wisest men follow their own ___________.",
+        answers: ["mother", "direction", "leader", "fences"],
+        correctAnswer: "direction"
     },
     {
-        question: "Question 4",
-        answers: ["answer1", "answer2", "answer3", "answer4"],
-        correctAnswer: "answer1"
+        question: "We do not _________ the Earth from our ancestors, we ________ it from our children.",
+        answers: ["inherit, borrow", "take, return", "lead, make", "want, need"],
+        correctAnswer: "inherit, borrow"
     },
     {
-        question: "Question 5",
-        answers: ["answer1", "answer2", "answer3", "answer4"],
-        correctAnswer: "answer1"
+        question: "There is no wealth like ____________, no poverty like _____________.",
+        answers: ["apples, firewood", "horses, ice cream", "knowledge, ignorance", "basketball, popcorn"],
+        correctAnswer: "knowledge, ignorance"
     }
 ]
 
+// question: "Question 1",
+// answers: ["answer1", "answer2", "answer3", "answer4"],
+// correctAnswer: "answer1"
+
 var startButton = document.getElementById("")
+var nextButton = document.getElementById("")
 var questionDiv = document.getElementById("question")
 var answerDiv = document.getElementById("answers")
 var resultDiv = document.getElementById("result")
 var counterDiv = document.getElementById("question-counter")
 var quizDiv = document.getElementById("")
-var timeDiv = document.getElementById("time-score-counter")
+var timeDiv = document.getElementById("time-counter")
+var scoreDiv = document.getElementById("score-counter")
 
 let timer = 60;
 let qIndex = 0;
