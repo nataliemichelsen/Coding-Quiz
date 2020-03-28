@@ -46,42 +46,6 @@
     border-style: solid;
 }
 
-.btn1 {
-    color: salmon;
-    background-color: whitesmoke;
-    border-width: thick;
-    border: pink;
-    border-radius: inherit;
-    border-style: solid;
-}
-
-.btn2 {
-    color: salmon;
-    background-color: whitesmoke;
-    border-width: thick;
-    border: pink;
-    border-radius: inherit;
-    border-style: solid;
-}
-
-.btn3 {
-    color: salmon;
-    background-color: whitesmoke;
-    border-width: thick;
-    border: pink;
-    border-radius: inherit;
-    border-style: solid;
-}
-
-.btn4 {
-    color: salmon;
-    background-color: whitesmoke;
-    border-width: thick;
-    border: pink;
-    border-radius: inherit;
-    border-style: solid;
-}
-
 .header {
     color: lightcoral;
 }
@@ -133,7 +97,7 @@
 #QC {
     color: lightcoral;
     padding-bottom: inherit;
-    text-align: justify;
+    text-align: center;
     font-size: 13px;
 }
 

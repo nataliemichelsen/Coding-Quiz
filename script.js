@@ -1,6 +1,6 @@
 let questionArr = [
     {
-        question: "To every _______, their is always opposed an equal _________.",
+        question: "To every _______, there is always opposed an equal _________.",
         answers: ["sister, brother", "country, hunter", "players, physics", "action, reaction"],
         correctAnswer: "action, reaction"
     },
@@ -106,6 +106,7 @@ function askQuestion() {
             answerDisplay.addEventListener("click", function(){
                 checkAnswer(eachAnswer)
             });
+
             // add class of answer-button 
             // for check answer function, listen to clicks on answer button
             answerDisplay.textContent = eachAnswer
