@@ -1,13 +1,3 @@
-<!-- TODO
-  * Link bootstrap / CSS style sheet / js script
-  * create grid for layout
-  * add a card to organize 
-  * render with meta compatible link
-  * add submit button
-  * add a countdown timer
-  * 
- -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,31 +8,54 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-        <title>Coding Quiz</title>
+    <title>Coding Quiz</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row" class="col-border">
-            <div class="col-md-12">
-                <h1 id="header">Code Quiz</h1>
-            </div>
-            <div class="col-md-12">
-                <h4 id="time-score-counter">Time and Score Counter</h4>
-            </div>
-            <div class="col-md-12">
-                <div id="question"></div>
-                <div id="answers"></div>
-            </div>
-            <div class="col-md-12">
-                <h4 id="result">Result</h4>
-            </div>
-            <div class="col-md-12">
-                <h5 id="question-counter">Question Counter</h5>
-            </div>
+
+    <head class="row">
+        <div id="counters" class="col-md-12">
+            <h4 id="time-counter">Time Counter</h4>
+            <h4 id="score-counter">Score Counter</h4>
         </div>
-        <p id="demo"></p>
-        <script src="./script.js" ></script>
+    </head>
+
+    <body>
+        <div class="card text-center">
+            <div class="card-header">
+                <h1 class="header" >
+                    Code Quiz
+                </h1>
+            </div>
+            <div class="container">
+                <div id="question-container" class="hide">
+                    <div class="card-body">
+                        <div id="question"></div>
+                        <div id="answers" class="btn-grid">
+                            <button class="btn">Answer1</button>
+                            <button class="btn">Answer2</button>
+                            <button class="btn">Answer3</button>
+                            <button class="btn">Answer4</button>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <button id="start-button" class="btn start-button">Start</button>
+                        <button id="next-button" class="btn next-button">Next</button>
+                    </div>
+                    <div class="col-md-12">
+                        <h4 id="result">Result</h4>
+                    </div>
+                    <div class="col-md-12">
+                        <h5 id="question-counter">Question Counter</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Thank you for trying my quiz!</p>
+              </div>
+    </body> -->
+    <p id="demo"></p>
+    <script src="./script.js"></script>
 </body>
 
 </html>
