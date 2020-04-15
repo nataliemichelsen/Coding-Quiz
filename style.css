@@ -4,16 +4,16 @@
     color: lightcoral;
     background-color: lightskyblue;
     border-width: thick;
-    border: pink;
+    border: #f7b7d3;
     border-radius: inherit;
     border-style: solid;
 }
 
-#question-counter {
+/* #question-counter {
     text-align: right;
     font-size: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
 
 #title-question-answer {
     text-align: center;
@@ -37,13 +37,24 @@
     padding-bottom: inherit;
 }
 
+#answers {
+    color: salmon;
+    background-color: whitesmoke;
+    border-width: thick;
+    border: #f7b7d3;
+    border-radius: inherit;
+    border-style: solid;
+}
+
 .btn {
     color: salmon;
     background-color: whitesmoke;
     border-width: thick;
-    border: pink;
+    border: #f7b7d3;
     border-radius: inherit;
     border-style: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
 .header {
@@ -53,7 +64,7 @@
 .card-header {
     background-color: lightgray;
     border-width: thick;
-    border: pink;
+    border: #f7b7d3;
     border-radius: inherit;
     border-style: solid;
 }
@@ -61,7 +72,7 @@
 #counters {
     background-color: lightskyblue;
     border-width: thick;
-    border: pink;
+    border: #f7b7d3;
     border-radius: inherit;
     border-style: solid;
 }
@@ -84,7 +95,7 @@
     width: 100%;
     background-color: lightgray;
     border-width: thick;
-    border: pink;
+    border: #f7b7d3;
     border-radius: inherit;
     border-style: solid;
     text-align: center;
@@ -99,6 +110,42 @@
     padding-bottom: inherit;
     text-align: center;
     font-size: 13px;
+}
+
+#savedScores {
+    background-color: lightskyblue;
+    border-width: thick;
+    border: #f7b7d3;
+    border-radius: inherit;
+    border-style: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#initialsInput {
+    color: salmon;
+    background-color: whitesmoke;
+    border-width: thick;
+    border: #f7b7d3;
+    border-radius: inherit;
+    border-style: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.submitButton {
+    color: salmon;
+    background-color: whitesmoke;
+    border-width: thick;
+    border: #f7b7d3;
+    border-radius: inherit;
+    border-style: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.initialsHeader {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
 /* // Small devices (landscape phones, 576px and up) */
