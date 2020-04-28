@@ -31,7 +31,6 @@ let questionArr = [
 // question: "Question 1",
 // answers: ["answer1", "answer2", "answer3", "answer4"],
 // correctAnswer: "answer1"
-
 let startButton = document.getElementById("start-button")
 let questionDiv = document.getElementById("question")
 let answerDiv = document.getElementById("answers")
@@ -40,9 +39,10 @@ let answerDiv = document.getElementById("answers")
 let timeDiv = document.getElementById("time-counter")
 let scoreDiv = document.getElementById("score-counter")
 let savedScores = document.getElementById("savedScores")
-let initials = document.getElementById("initialContainer")
+let initials = document.getElementById("submitButton")
 let initialsInput = document.getElementById("initialsInput")
-let scoreValues = "<ul></ul>" 
+let initialsContainer = document.getElementById("initialContainer")
+let scoreValues = "<h3>Saved Highscores</h3> <ul class='savedHighscores'></ul>" 
 let score = 0
 let timer = 60;
 let qIndex = 0;
@@ -50,11 +50,13 @@ let qIndex = 0;
 // function getScores
 // when page loads, get high scores from local storage
 // append data to high scores div
-
-savedScores.innerHTML = localStorage.getItem("savedScores1")
-
 function getScores() {
-
+    if (localStorage.getItem("savedScores1")) {
+        scoreValues = localStorage.getItem("savedScores1")
+        savedScores.innerHTML = scoreValues
+    } else {
+        savedScores.innerHTML = scoreValues
+    }
 }
 
 // function startGame
@@ -62,7 +64,6 @@ function getScores() {
 // initializes the game
 // calls startTimer
 // calls askQuestion
-
 function startGame() {
     score = 0
     timer = 60;
@@ -73,11 +74,9 @@ function startGame() {
 
 // function startTimer
 // begins timer countdown from 60 seconds
-
 // checks for game-end conditions
 // inside if statement we must account for all game-end conditions
 // if all questions have been answered
-
 function startTimer() {
     timeDiv.textContent = timer
     scoreDiv.textContent = score
@@ -106,7 +105,6 @@ function startTimer() {
 // append each answer to answers div
 // populate answers in questions (append new nodes)
 // clear cashe for empty ID
-
 function askQuestion() {
     questionDiv.innerHTML = "";
     answerDiv.innerHTML = "";
@@ -125,10 +123,9 @@ function askQuestion() {
             answerDiv.appendChild(answerDisplay);
             answerDisplay.addEventListener('click', checkAnswer)
         }
-
     }
-
 }
+
 // askQuestion()
 // function checkAnswer
 // fires when an answer is clicked
@@ -138,7 +135,6 @@ function askQuestion() {
 // if incorrect, penalize time or decrements score
 // increment question index 
 // calls askQuestion
-
 function checkAnswer() {
     // console.log(this.textContent)
     var userChoice = this.textContent
@@ -163,9 +159,8 @@ function checkAnswer() {
 // display final score to user
 // ask for user input (name or initials)
 // loading initials > submit add score to local storage > load local storage into savedScores 
-
 function endGame() {
-    initials.style = "display: block;";
+    initialsContainer.style = "display: block;";
     // alert(`Your score is ${score} out of 5`)
 }
 
@@ -174,13 +169,12 @@ function endGame() {
 // capture user end score
 // save score to local storage
 // local storage should be an array of objects (similar to questionsArr)
-
 function saveScore() {
     let initials = initialsInput.value;
-    scoreValues += `<li> name: ${initials} score: ${score}`;
+    scoreValues += `<li class="highscoresList"> name: ${initials} score: ${score}`;
     localStorage.setItem("savedScores1", scoreValues);
     initials.style = "display: none;";
     savedScores.innerHTML = scoreValues;
 }
-startButton.addEventListener("click", startGame)
+startButton.addEventListener("click", startGame);
 initials.addEventListener("click", saveScore);
