@@ -1,80 +1,94 @@
 .container {
     width: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: lightcoral;
-    background-color: lightskyblue;
-    border-width: thick;
-    border: #f7b7d3;
-    border-radius: inherit;
-    border-style: solid;
+    color: #f7b7d3;
 }
 
-/* #question-counter {
-    text-align: right;
-    font-size: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-} */
+#initialContainer {
+    background-color: #333333;
+    padding: 14px;
+}
 
-#title-question-answer {
+#startContainer {
+    background-color: #333333;
+    padding: 14px;
+}
+
+#savedScores {
+    background-color: #333333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 24px;
     text-align: center;
 }
 
-#time-counter {
-    text-align: right;
-    color: darkslategrey;
-    font-style: oblique;
+#counters {
+    background-color: lightgrey;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 14px;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: #f7b7d3;
+    text-align: left;
+    color: #333333;
+    font-style: normal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
 }
 
-#score-counter {
-    text-align: right;
-    color: darkslategrey;
-    font-style: oblique;
+#questionContainer {
+    background-color: #333333;
+    padding: 14px;
+    text-align: center;
 }
 
 #question {
-    color: lightcoral;
+    color: #f7b7d3;
     text-align: inherit;
     padding-bottom: inherit;
+    text-align: center;
 }
 
 #answers {
-    color: salmon;
-    background-color: whitesmoke;
-    border-width: thick;
-    border: #f7b7d3;
-    border-radius: inherit;
-    border-style: solid;
+    color: #f7b7d3;
+    text-align: center;
 }
 
-.btn {
-    color: salmon;
-    background-color: whitesmoke;
+#startButton {
+    color: #f7b7d3;
+    background-color: #333333;
     border-width: thick;
     border: #f7b7d3;
-    border-radius: inherit;
+    border-radius: 0px;
+    border-style: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-left: 48%;
+}
+
+#submitButton {
+    color: #f7b7d3;
+    background-color: #333333;
+    border-width: thick;
+    border: #f7b7d3;
+    border-radius: 0px;
     border-style: solid;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
 
-.header {
-    color: lightcoral;
-}
-
 .card-header {
-    background-color: lightgray;
-    border-width: thick;
-    border: #f7b7d3;
-    border-radius: inherit;
+    background-color: #333333;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 14px;
+    border-radius: 0px;
     border-style: solid;
-}
-
-#counters {
-    background-color: lightskyblue;
-    border-width: thick;
-    border: #f7b7d3;
-    border-radius: inherit;
-    border-style: solid;
+    border-color: #f7b7d3;
+    border-radius: 0px;
+    color: #f7b7d3;
 }
 
 #result {
@@ -84,72 +98,36 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#question-counter {
-    font-style: oblique;
-}
-
-#initialContainer {
-
-}
-
-.savedHighscores {
-
-}
-
-.highscoresList {
-    
-}
-
-.footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: lightgray;
-    border-width: thick;
-    border: #f7b7d3;
-    border-radius: inherit;
+#footer {
+    border-left: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-top: 14px;
+    border-radius: 0px;
     border-style: solid;
+    border-color: #f7b7d3;
     text-align: center;
-    padding-top: 10px;
-    color: darkslategray;
+    padding-top: 14px;
+    color: #333333;
+    background-color: lightgrey;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
     font-weight: bold;
   }
 
 #QC {
-    color: lightcoral;
+    color: #333333;
     padding-bottom: inherit;
     text-align: center;
     font-size: 13px;
 }
 
-#savedScores {
-    background-color: lightskyblue;
-    border-width: thick;
-    border: #f7b7d3;
-    border-radius: inherit;
-    border-style: solid;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 #initialsInput {
-    color: salmon;
+    color: #f7b7d3;
     background-color: whitesmoke;
     border-width: thick;
     border: #f7b7d3;
-    border-radius: inherit;
-    border-style: solid;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-}
-
-.submitButton {
-    color: salmon;
-    background-color: whitesmoke;
-    border-width: thick;
-    border: #f7b7d3;
-    border-radius: inherit;
+    border-radius: 0px;
     border-style: solid;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;

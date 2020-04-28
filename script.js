@@ -31,7 +31,7 @@ let questionArr = [
 // question: "Question 1",
 // answers: ["answer1", "answer2", "answer3", "answer4"],
 // correctAnswer: "answer1"
-let startButton = document.getElementById("start-button")
+let startButton = document.getElementById("startButton")
 let questionDiv = document.getElementById("question")
 let answerDiv = document.getElementById("answers")
 // let resultDiv = document.getElementById("result")
