@@ -5,6 +5,3 @@ The end goal was to make the quiz run through all answers while the timer counte
 A separate function plus in-order organization was necessary for all goals to work properly and in the correct sequence. 
 After all the technical requirements were completed, I corrosponded an external CSS file with the code to add styling and additional organization. 
 Because I used information created by others, I also gave credit to all the authors who provided the quotes used for the quiz. 
-
-
-*thank you for your patience with the submittance errors and general tardiness of this project
